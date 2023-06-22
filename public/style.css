@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --primary-color: #202121;
+  --button-color: #515152;
+  --button-color-on-hover: #777778;
+}
+
+body {
+  background-color: #ebeced;
+  margin: 0;
+  font-family: "Montserrat", serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  color: white;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.search input[type="text"] {
+  width: 400px;
+  height: 40px;
+  outline: 0;
+  padding-left: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 20px;
+  width: 150px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login img {
+  width: 24px;
+  height: 24px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart img {
+  width: 24px;
+  height: 24px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.banner {
+  position: relative;
+  background: url(image/banner.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 500px;
+}
+
+.black-friday {
+  position: absolute;
+  font-size: 50px;
+  top: 180px;
+  left: 150px;
+}
+
+.shop-now {
+  position: absolute;
+  border-radius: 10px;
+  top: 250px;
+  left: 150px;
+  font-size: 20px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: white;
+}
+
+.shop-now:hover {
+  background-color: var(--button-color-on-hover);
+}
+
+.items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+
+.product {
+  border: 1px solid #c0c2c0;
+  margin: 30px;
+  padding: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  color: #000;
+  font-size: 20px;
+}
+
+.product p {
+  color: #000;
+}
+
+.product button {
+  border-radius: 10px;
+  border: none;
+  padding: 4px 12px;
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: white;
+}
+
+.product button:hover {
+  background-color: var(--button-color-on-hover);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: var(--primary-color);
+}
